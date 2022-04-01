@@ -1,0 +1,629 @@
+/*#region **************** VARIABLES ****************/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --background: #181a1e;
+    --white: #202528;
+    --dark: #edeffd;
+    --light: rgba(0, 0, 0, 0.5);
+    --box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+
+    --primary: #01796E;
+    --medium: #34948b;
+
+    --green: #16C784;
+    --red: #EA3943;
+
+    --notifications: #FF7589;
+    --logo: #E84142;
+    --light-grey: #8b9096;
+    --muted: #7d8da1;
+    
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+}
+
+.light-mode-variables{
+    --background: #f6f6f9;
+    --white: #fff;
+    --dark: #41474e;
+    --light: #01796f3e;
+    --box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*#endregion*/
+
+/*#region **************** GENERAL STYLES ****************/
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--dark);
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 6rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.4rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.muted{
+    color: var(--muted);
+}
+
+p{
+    color: var(--medium);
+}
+
+b{
+    color: var(--light-grey);
+}
+
+.primary{
+    color: var(--primary);
+}
+
+.logoHalf{
+    color: var(--primary);
+}
+
+/*#endregion*/
+
+/*#region **************** ASIDE ****************/
+
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+.logo{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.close{
+    display: none;
+}
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+h3{
+    font-weight: 500;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: var(--muted);
+    margin-left: 1.4rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition:  all 300ms ease;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar #dark-mode{
+    position: absolute;
+    bottom: 5.7rem;
+}
+
+aside .sidebar #dark-mode span:hover{
+    color: var(--primary);
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+    color: var(--primary);
+    background: var(--light);
+    margin-left: 0rem;
+}
+
+aside .sidebar a.active:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--medium)
+}
+
+aside .sidebar a.active span{
+    color: var(--primary);
+    margin-left: calc(1rem -3px);
+}
+
+aside .sidebar a:hover{
+    color: var(--primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 0.5rem;
+}
+
+aside .sidebar .notification-count{
+    background: var(--notifications);
+    color: var(--white);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+/*#endregion*/
+
+/*#region **************** MAIN ****************/
+
+main{
+    margin-top: 1.4rem;
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+
+main .insights > div{
+    z-index: auto;
+    background: var(--white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    transition: all 300ms ease;
+    box-shadow: var(--box-shadow);
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+}
+
+main .insights > div img{
+    width: 3rem;
+    height: 3rem;
+}
+
+main .insights > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+main .insights .chart{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+main .insights svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights svg circle{
+    fill: none;
+    stroke:  var(--primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dashoffset: 110;
+    stroke-dasharray: 92;
+}
+
+main .insights .btc svg circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+main .insights .eth svg circle {
+    stroke-dashoffset: -30;
+    stroke-dasharray: 150;
+}
+
+main .insights .usdc svg circle {
+    stroke-dashoffset: 35;
+    stroke-dasharray: 120;
+}
+
+main .insights .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .insights small{
+    margin-top: 1rem;
+    display: block;
+}
+
+main .currencies{
+    margin-top: 2.4rem;
+}
+
+main .currencies h2{
+    margin-bottom: 0.8rem;
+}
+
+main .currencies table{
+    width: 100%;
+    background: var(--white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .currencies table:hover{
+    box-shadow: none;
+}
+
+main .currencies table thead{
+    font-size: 1.2rem;
+}
+
+#name{
+    width: 30%;
+    display: flex;
+}
+
+#apy{
+    width: 10%;
+}
+
+#price{
+    width: 20%;
+}
+
+#percent{
+    width: 10%;
+}
+
+#balance{
+    width: 20%;
+}
+
+#details{
+    width: 10%;
+}
+
+.currencyName{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.currencyName div{
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    margin-right: 1.4rem;
+}
+
+main .currencies table tbody td{
+    font-size: 1.1rem;
+    font-weight: 500;
+    height: 4rem;
+    color: var(--light-grey);
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+
+main .currencies table tbody img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+main .currencies table tbody .green{
+    color: var(--green);
+}
+
+main .currencies table tbody .red{
+    color: var(--red);
+}
+
+main .currencies table tbody .more{
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 300ms;
+}
+
+main .currencies table tbody .more:hover{
+    text-decoration-color: var(--primary);
+}
+
+main .name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*#endregion*/
+
+/*#region **************** PROFILE ****************/
+
+.right .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.right .top button{
+    display: none;
+}
+
+.right .top .profile{
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .profile .info{
+    font-size: 1rem;
+}
+
+.right .top .profile span{
+    font-size: 3rem;
+}
+
+/*#endregion*/
+
+/*#region **************** MEDIA QUERIES ****************/
+
+@media screen and (max-width: 1400px){
+    main .insights{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        grid-template-columns: 7rem auto 6rem;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    main .insights{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .currencies table thead tr th:nth-child(2),
+    main .currencies table tbody tr td:nth-child(2),
+    main .currencies table thead tr th:nth-child(4),
+    main .currencies table tbody tr td:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside{
+        position: fixed;
+        left: -100%;
+        background: var(--white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu{
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo{
+        margin-left: 1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+    }
+
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main{
+        margin-top: 8rem;
+        padding: 0 2rem;
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .currencies{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+
+    main .currencies table{
+        width: 100%;
+        margin: 0;
+    }
+
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--light);
+    }
+
+    .right .dark-mode{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .right .profile .info{
+        display: none;
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--dark);
+        position: absolute;
+        left: 1rem;
+        height: 4.6rem;
+    }
+
+    .right .top button span{
+        font-size: 3rem;
+    }
+}
+
+/*#endregion*/
