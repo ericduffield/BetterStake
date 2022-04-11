@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/baseline.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!---------------LEFT--------------->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="logo">
+                    <h2>BETTER<span class="logoHalf">STAKE</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="/">
+                    <span class="material-icons-sharp">space_dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>Info</h3>
+                </a>
+                <a href="/about" class="active">
+                    <span class="material-icons-sharp">description</span>
+                    <h3>About</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">notifications</span>
+                    <h3>Notifications</h3>
+                    <div class="notification-count">14</div>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">help_outline</span>
+                    <h3>Help</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">email</span>
+                    <h3>Mail</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a id="dark-mode">
+                    <span id="mode-logo" class="material-icons-sharp">light_mode</span>
+                    <h3 id="mode-text">Light Mode</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!---------------Main--------------->
+        <main>
+            <!----------Rates---------->
+            <div class="rates">
+                <h1>Rates</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="name">Name</th>
+                            <th id="apy">APY</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!---------------RIGHT--------------->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Eric Duffield</p>
+                    </div>
+                    <div>
+                        <span class="material-icons-sharp">account_circle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/about.js"></script>
+    <script src="/scripts/baseline.js"></script>
+</body>
+
+</html>

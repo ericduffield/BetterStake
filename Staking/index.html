@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staking</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/baseline.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 </head>
 
@@ -16,7 +17,7 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <img src="./images/logo.png" alt="logo">
+                    <img src="/images/logo.png" alt="logo">
                     <h2>BETTER<span class="logoHalf">STAKE</span></h2>
                 </div>
                 <div class="close" id="close-btn">
@@ -28,11 +29,11 @@
                     <span class="material-icons-sharp">space_dashboard</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="#">
+                <a href="/">
                     <span class="material-icons-sharp">info</span>
                     <h3>Info</h3>
                 </a>
-                <a href="#">
+                <a href="/about">
                     <span class="material-icons-sharp">description</span>
                     <h3>About</h3>
                 </a>
@@ -66,9 +67,9 @@
         <!---------------Main--------------->
         <main>
             <h1>Dashboard</h1>
-            <div class="insights">
+            <div id="insights">
                 <div class="btc">
-                    <img src="./images/btc.png" alt="btc">
+                    <img src="/images/btc.png" alt="btc">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -86,7 +87,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="eth">
-                    <img src="./images/eth.svg" alt="eth">
+                    <img src="/images/eth.svg" alt="eth">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -103,9 +104,26 @@
                     </div>
                     <small class="muted">Gang ways</small>
                 </div>
-
                 <div class="usdc">
-                    <img src="./images/usdc.png" alt="usdc">
+                    <img src="/images/usdc.png" alt="usdc">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Amount</h3>
+                            <h1>$5,000</h1>
+                        </div>
+                        <div class="chart">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>10%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted">Gang ways</small>
+                </div>
+                <div class="usdt">
+                    <img src="/images/usdt.svg" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -123,7 +141,25 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/ust.png" alt="ust">
+                    <img src="/images/ust.png" alt="ust">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Amount</h3>
+                            <h1>$5,000</h1>
+                        </div>
+                        <div class="chart">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>10%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted">Gang ways</small>
+                </div>
+                <div class="busd">
+                    <img src="/images/busd.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -142,7 +178,7 @@
                 </div>
                 <!--
                 <div class="ust">
-                    <img src="./images/ada.png" alt="ust">
+                    <img src="/images/ada.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -160,7 +196,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/avax.svg" alt="ust">
+                    <img src="/images/avax.svg" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -178,7 +214,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/bnb.png" alt="ust">
+                    <img src="/images/bnb.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -196,7 +232,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/busd.png" alt="ust">
+                    <img src="/images/dot.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -214,7 +250,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/dot.png" alt="ust">
+                    <img src="/images/link.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -232,7 +268,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/link.png" alt="ust">
+                    <img src="/images/logo.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -250,25 +286,7 @@
                     <small class="muted">Gang ways</small>
                 </div>
                 <div class="ust">
-                    <img src="./images/logo.png" alt="ust">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$5,000</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>10%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="muted">Gang ways</small>
-                </div>
-                <div class="ust">
-                    <img src="./images/luna.png" alt="ust">
+                    <img src="/images/luna.png" alt="ust">
                     <div class="middle">
                         <div class="left">
                             <h3>Amount</h3>
@@ -325,8 +343,8 @@
             </div>
         </div>
     </div>
-    <script src="./scripts/currencies.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/baseline.js"></script>
 </body>
 
 </html>
