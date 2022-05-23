@@ -6,11 +6,11 @@ const modeLogo = document.querySelector("#mode-logo");
 const modeText = document.querySelector("#mode-text");
 
 menuBtn.addEventListener("click", () => {
-    sideMenu.style.display = "block";
+    sideMenu.style.left = "0%";
 })
 
 closeBtn.addEventListener("click", () => {
-    sideMenu.style.display = "none";
+    sideMenu.style.left = "-100%";
 })
 
 darkMode.addEventListener("click", () => {
