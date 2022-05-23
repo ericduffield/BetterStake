@@ -18,6 +18,15 @@ const Currencies = [
         balance: '0.175',
     },
     {
+        logo: "./images/bnb.png",
+        name: 'BNB',
+        symbol: 'BNB',
+        APY: "10%",
+        price: '',
+        change: -0.01,
+        balance: '127.00',
+    },
+    {
         logo: "./images/usdc.png",
         name: 'Usd Coin',
         symbol: 'USDC',
@@ -25,15 +34,6 @@ const Currencies = [
         price: '',
         change: 0.01,
         balance: '257.00',
-    },
-    {
-        logo: "./images/ust.png",
-        name: 'Tether',
-        symbol: 'USDT',
-        APY: "15%",
-        price: '',
-        change: -0.01,
-        balance: '127.00',
     },
     {
         logo: "./images/usdt.svg",
