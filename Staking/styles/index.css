@@ -216,7 +216,7 @@ main .name{
 
 /*#region **************** MEDIA QUERIES ****************/
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1450px){
     main #insights{
         grid-template-columns: repeat(3, 1fr);
     }

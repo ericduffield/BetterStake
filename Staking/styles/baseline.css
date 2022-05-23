@@ -364,7 +364,7 @@ aside .sidebar .notification-count{
 
 /*#region **************** MEDIA QUERIES ****************/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1190px){
     .container{
         grid-template-columns: 7.8rem auto 6rem;
     }
@@ -395,6 +395,7 @@ aside .sidebar .notification-count{
     }
 
     aside{
+        margin-left: 0;
         position: fixed;
         left: -100%;
         background: var(--white);
