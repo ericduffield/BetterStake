@@ -38,8 +38,6 @@
     --box-shadow-socials: 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -74,7 +72,7 @@ body{
     display: grid;
     width: 96%;
     gap: 1.8rem;
-    grid-template-columns: 14rem auto 6rem;
+    grid-template-columns: 16rem auto 6rem;
 }
 
 img{
@@ -133,6 +131,7 @@ b{
 
 aside{
     height: 100vh;
+    margin-left: 2rem;
 }
 
 aside .top{
@@ -367,7 +366,7 @@ aside .sidebar .notification-count{
 
 @media screen and (max-width: 1200px){
     .container{
-        grid-template-columns: 7rem auto 6rem;
+        grid-template-columns: 7.8rem auto 6rem;
     }
 
     aside .logo h2{
