@@ -130,7 +130,7 @@ b{
 /*#region **************** ASIDE ****************/
 
 aside{
-    height: 100vh;
+    height: 200vh;
     margin-left: 2rem;
 }
 
@@ -406,7 +406,6 @@ aside .sidebar .notification-count{
         width: 18rem;
         z-index: 3;
         box-shadow: 1rem 3rem 4rem var(--light);
-        height: 100vh;
         padding-right: var(--card-padding);
         transition: all 300ms ease;
     }
@@ -492,6 +491,21 @@ aside .sidebar .notification-count{
     .row{
          margin-right: 4rem;
          margin-left: 4rem;
+    }
+
+    .footerContainer .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footerContainer .row .footerServices, .footerAbout{
+        text-align: center;
+    }
+
+    .footerContainer .row .footerDescription{
+        margin-top: 2rem;
+        text-align: center;
+        grid-column: 1 / span 2;
     }
 
 }
