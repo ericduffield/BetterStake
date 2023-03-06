@@ -1,183 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/styles/baseline.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/styles/baseline.css">
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <link rel="icon" href="/Images/logo/favicon.ico">
+        <link rel="apple-touch-icon" href="/Images/logo/apple-touch-icon.png">
+    </head>
 
-<body>
-    <div class="container">
-        <!---------------LEFT--------------->
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="/images/logo/logo.png" alt="logo">
-                    <h2>BETTER<span class="logoHalf">STAKE</span></h2>
+    <body>
+        <div class="container">
+            <!---------------LEFT--------------->
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="/images/logo/logo.png" alt="logo">
+                        <h2>BETTER<span class="logoHalf">STAKE</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
                 </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
+                <div class="sidebar">
+                    <a href="/" class="active">
+                        <span class="material-icons-sharp">space_dashboard</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">info</span>
+                        <h3>Info</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">description</span>
+                        <h3>About</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">notifications</span>
+                        <h3>Notifications</h3>
+                        <div class="notification-count">14</div>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">help_outline</span>
+                        <h3>Help</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">email</span>
+                        <h3>Mail</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a id="dark-mode">
+                        <span id="mode-logo" class="material-icons-sharp">light_mode</span>
+                        <h3 id="mode-text">Light Mode</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>logout</h3>
+                    </a>
                 </div>
-            </div>
-            <div class="sidebar">
-                <a href="/" class="active">
-                    <span class="material-icons-sharp">space_dashboard</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">info</span>
-                    <h3>Info</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">description</span>
-                    <h3>About</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">notifications</span>
-                    <h3>Notifications</h3>
-                    <div class="notification-count">14</div>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">help_outline</span>
-                    <h3>Help</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">email</span>
-                    <h3>Mail</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">settings</span>
-                    <h3>Settings</h3>
-                </a>
-                <a id="dark-mode">
-                    <span id="mode-logo" class="material-icons-sharp">light_mode</span>
-                    <h3 id="mode-text">Light Mode</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">logout</span>
-                    <h3>logout</h3>
-                </a>
-            </div>
-        </aside>
-        <!---------------Main--------------->
-        <main>
-            <h1>Dashboard</h1>
-            <div id="insights">
-                <div class="btc">
-                    <img src="/images/btc.png" alt="btc">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$10,000</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>33%</p>
+            </aside>
+            <!---------------Main--------------->
+            <main>
+                <h1>Dashboard</h1>
+                <div id="insights">
+                    <div class="btc">
+                        <img src="/images/btc.png" alt="btc">
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Amount</h3>
+                                <h1>$10,000</h1>
+                            </div>
+                            <div class="chart">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>33%</p>
+                                </div>
                             </div>
                         </div>
+                        <small class="muted">This is a demo</small>
                     </div>
-                    <small class="muted">This is a demo</small>
-                </div>
-                <div class="eth">
-                    <img src="/images/eth.svg" alt="eth">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$8,500</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>29%</p>
+                    <div class="eth">
+                        <img src="/images/eth.svg" alt="eth">
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Amount</h3>
+                                <h1>$8,500</h1>
+                            </div>
+                            <div class="chart">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>29%</p>
+                                </div>
                             </div>
                         </div>
+                        <small class="muted">This is a demo</small>
                     </div>
-                    <small class="muted">This is a demo</small>
-                </div>
-                <div class="bnb">
-                    <img src="/images/bnb.png" alt="bnb">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$4,000</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>14%</p>
+                    <div class="bnb">
+                        <img src="/images/bnb.png" alt="bnb">
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Amount</h3>
+                                <h1>$4,000</h1>
+                            </div>
+                            <div class="chart">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>14%</p>
+                                </div>
                             </div>
                         </div>
+                        <small class="muted">This is a demo</small>
                     </div>
-                    <small class="muted">This is a demo</small>
-                </div>
-                <div class="usdc">
-                    <img src="/images/usdc.png" alt="usdc">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$2,500</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>8%</p>
+                    <div class="usdc">
+                        <img src="/images/usdc.png" alt="usdc">
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Amount</h3>
+                                <h1>$2,500</h1>
+                            </div>
+                            <div class="chart">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>8%</p>
+                                </div>
                             </div>
                         </div>
+                        <small class="muted">This is a demo</small>
                     </div>
-                    <small class="muted">This is a demo</small>
-                </div>
-                <div class="usdt">
-                    <img src="/images/usdt.svg" alt="usdt">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$2,500</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>8%</p>
+                    <div class="usdt">
+                        <img src="/images/usdt.svg" alt="usdt">
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Amount</h3>
+                                <h1>$2,500</h1>
+                            </div>
+                            <div class="chart">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>8%</p>
+                                </div>
                             </div>
                         </div>
+                        <small class="muted">This is a demo</small>
                     </div>
-                    <small class="muted">This is a demo</small>
-                </div>
-                <div class="busd">
-                    <img src="/images/busd.png" alt="busd">
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Amount</h3>
-                            <h1>$2,500</h1>
-                        </div>
-                        <div class="chart">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>8%</p>
+                    <div class="busd">
+                        <img src="/images/busd.png" alt="busd">
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Amount</h3>
+                                <h1>$2,500</h1>
+                            </div>
+                            <div class="chart">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>8%</p>
+                                </div>
                             </div>
                         </div>
+                        <small class="muted">This is a demo</small>
                     </div>
-                    <small class="muted">This is a demo</small>
-                </div>
-                <!--
+                    <!--
                 <div class="ada">
                     <img src="/images/ada.png" alt="ada">
                     <div class="middle">
@@ -251,87 +253,88 @@
                     <small class="muted">This is a demo</small>
                 </div>
                 -->
-            </div>
+                </div>
 
-            <!----------Currencies---------->
-            <div class="currencies">
-                <h2>Currencies</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th id="name">Name</th>
-                            <th id="apy">APY</th>
-                            <th id="price">Price</th>
-                            <th id="percent">24h %</th>
-                            <th id="balance">Balance</th>
-                            <th id="details">Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-        <!---------------RIGHT--------------->
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">menu</span>
-                </button>
+                <!----------Currencies---------->
+                <div class="currencies">
+                    <h2>Currencies</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="name">Name</th>
+                                <th id="apy">APY</th>
+                                <th id="price">Price</th>
+                                <th id="percent">24h %</th>
+                                <th id="balance">Balance</th>
+                                <th id="details">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+            <!---------------RIGHT--------------->
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
 
-                <div class="profile">
-                    <div class="info">
-                        <p>John Doe</p>
-                    </div>
-                    <div>
-                        <span class="material-icons-sharp">account_circle</span>
+                    <div class="profile">
+                        <div class="info">
+                            <p>John Doe</p>
+                        </div>
+                        <div>
+                            <span class="material-icons-sharp">account_circle</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-dark">
-        <footer>
-            <div class="footerContainer">
-                <div class="row">
-                    <div class="footerServices">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Staking</a></li>
-                            <li><a href="#">Lending</a></li>
-                            <li><a href="#">Borrowing</a></li>
-                        </ul>
+        <div class="footer-dark">
+            <footer>
+                <div class="footerContainer">
+                    <div class="row">
+                        <div class="footerServices">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Staking</a></li>
+                                <li><a href="#">Lending</a></li>
+                                <li><a href="#">Borrowing</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerAbout">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerDescription">
+                            <h3>Better Stake</h3>
+                            <p>Better stake is a cryptocurrency staking and lending platform.
+                                We strive to offer users the best rates for lending and borrowing as well as an easy to
+                                use
+                                and
+                                intuitive platform.
+                                We are a team of developers, designers, and marketers who are passionate about crypto.
+                                We care about user experience as well as building a strong community.
+                            </p>
+                        </div>
                     </div>
-                    <div class="footerAbout">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerDescription">
-                        <h3>Better Stake</h3>
-                        <p>Better stake is a cryptocurrency staking and lending platform.
-                            We strive to offer users the best rates for lending and borrowing as well as an easy to use
-                            and
-                            intuitive platform.
-                            We are a team of developers, designers, and marketers who are passionate about crypto.
-                            We care about user experience as well as building a strong community.
-                        </p>
-                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                                class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-instagram"></i></a></div>
+                    <p class="copyright">Better Stake © 2022</p>
                 </div>
-                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-                            class="icon ion-social-twitter"></i></a><a href="#"><i
-                            class="icon ion-social-snapchat"></i></a><a href="#"><i
-                            class="icon ion-social-instagram"></i></a></div>
-                <p class="copyright">Better Stake © 2022</p>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
 
-    <script src="/scripts/index.js"></script>
-    <script src="/scripts/baseline.js"></script>
-</body>
+        <script src="/scripts/index.js"></script>
+        <script src="/scripts/baseline.js"></script>
+    </body>
 
 </html>
